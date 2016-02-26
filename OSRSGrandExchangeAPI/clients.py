@@ -24,7 +24,7 @@ class OfficialAPI(API):
     def __init__(self):
         self.base_url = OFFICIAL_BASE_URL
 
-    def parse_price(value):
+    def parse_price(self, value):
         if str(value).isdigit():
             return value
 

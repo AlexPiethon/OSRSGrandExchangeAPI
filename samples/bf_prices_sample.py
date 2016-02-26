@@ -1,4 +1,4 @@
-import API as api
+import OSRSGrandExchangeAPI as api
 import sys
 
 oapi = api.OfficialAPI()

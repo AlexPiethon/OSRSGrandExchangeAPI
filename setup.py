@@ -13,22 +13,15 @@ setup(
 
     # Packages
     packages=["OSRSGrandExchangeAPI"],
-
-    # Include additional files into the package
-    include_package_data=True,
+    package_data = {"OSRSGrandExchangeAPI": ['items.json']},
 
     # Details
     url="https://github.com/zakkl13/OSRSGrandExchangeAPI",
 
     #
-    # license="LICENSE.txt",
+    license="LICENSE.txt",
     description="Oldschool Runescape API for ",
 
     # long_description=open("README.txt").read(),
 
-    # Dependent packages (distributions)
-    install_requires=[
-        "requests",
-        "json",
-    ],
 )

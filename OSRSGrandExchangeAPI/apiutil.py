@@ -1,8 +1,9 @@
 import requests
 import json
+import os
+from pkg_resources import resource_string
 
-with open('items.json') as items_file:
-    items = json.loads(items_file.read())
+items = json.loads(resource_string(__name__, 'items.json'))
 
 for item in items:
     item['id'] = int(item['id'])
