@@ -8,7 +8,7 @@ class API():
     def get_raw_dict(self, item_name):
         j_dict = util.query_item(item_name, self.base_url)
         if j_dict is None:
-            print 'Item: \'%s\' could not be found.' % item_name
+            print('Item: \'%s\' could not be found.' % item_name)
             return None
         return j_dict
 
@@ -48,7 +48,7 @@ class OfficialAPI(API):
         URL = 'http://services.runescape.com/m=itemdb_oldschool/api/graph/'
         item_id = util.get_id(item_name)
         if item_id is None:
-            print 'Item: \'%s\' could not be found.' % item_name
+            print('Item: \'%s\' could not be found.' % item_name)
             return None
         req_url = URL + str(item_id) + '.json'
         r = requests.get(req_url)
